@@ -12,7 +12,7 @@ body{
 }
 
 
-#questions{
+.questions{
 	background: rgba(201, 201, 201 , .7); 
 	border-radius: 25px;
 	padding: 20px;
