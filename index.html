@@ -15,7 +15,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <!-- Javascript-->
-    <script type="text/javascript" src=></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 
 <body>
@@ -23,37 +23,40 @@
         <div class="jumbotron">
             <h1><img src="assets/images/Seinfeld_logo.png" id="logo"> Trivia</h1>
             <h2>Rules</h2>
-            <p id="jb">You have until the theme ends(about 60 seconds) to answer all the questions</p>
-            <p id="countDown"></p>
+            <p id="jb">You have until the theme ends to answer all the questions and the time already started. You better get moving.</p>
+            <p id="countDown">Time Remaining:</p>
+            <p id="correct">Correct :</p>    <p id="wrong">Wrong :</p>
         </div>
         <div class="row" id="questionOne">
             <div class="col-sm-1"></div>
             <div class="col-sm-10" id="questions">
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/98dai6CC5BA" frameborder="0" allowfullscreen></iframe>
                 <p>Which one of these characters does Jerry famously despise the most?</p>
                 <div class="custom-controls-stacked">
                     <label class="custom-control custom-radio">
-                        <input id="question1Answer1" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question1Answer1" name="radio-stacked1" value="TheSoupNazi" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">The Soup Nazi</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question1Answer2" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input name="radio-stacked1" id="question1Answer2" value="Newman" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Newman</span>
+                        <span class="custom-control-description" >Newman</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question1Answer3" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question1Answer3" name="radio-stacked1" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">The Wiz</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question1Answer4" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question1Answer4" name="radio-stacked1" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Kenny Bania</span>
                     </label>
+                    <p id="answerNumberOne"></p>
                 </div>
             </div>
             <div class="col-sm-1"></div>
@@ -62,31 +65,33 @@
         <div class="row" id="questionTwo">
             <div class="col-sm-1"></div>
             <div class="col-sm-10" id="questions">
+            <iframe width="300" height="169" src="https://getyarn.io/yarn-clip/embed/0369c77d-f0aa-46ec-a18e-d2121be7dad3?autoplay=false" frameborder="0" allowfullscreen></iframe>
                 <p>While attending the US Open with Jerry, George describes a woman as a "B.L.". What does B.L. stand for?</p>
                 <div class="custom-controls-stacked">
                     <label class="custom-control custom-radio">
-                        <input id="question2Answer1" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question2Answer1" name="radio-stacked2" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Brett Leonard</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question2Answer2" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question2Answer2" name="radio-stacked2" value="BL" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Beautiful Lineswoman</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question2Answer3" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question2Answer3" name="radio-stacked2" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Butt Licker</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question2Answer4" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question2Answer4" name="radio-stacked2" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Big Loser</span>
                     </label>
+                    <p id="answerNumberTwo"></p>
                 </div>
             </div>
             <div class="col-sm-1"></div>
@@ -95,31 +100,33 @@
         <div class="row" id="questionThree">
             <div class="col-sm-1"></div>
             <div class="col-sm-10" id="questions">
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/M29A6rZpKqk" frameborder="0" allowfullscreen></iframe>
                 <p>Where does Kramer drop his Junior Mint?</p>
                 <div class="custom-controls-stacked">
                     <label class="custom-control custom-radio">
-                        <input id="question3Answer1" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question3Answer1" name="radio-stacked3" value="deadBody" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">A dead body</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question3Answer2" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question3Answer2" name="radio-stacked3" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Jerry's toilet</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question3Answer3" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question3Answer3" name="radio-stacked3" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">George's coffee</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question3Answer4" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question3Answer4" name="radio-stacked3" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Elaine's big salad</span>
                     </label>
+                    <p id="answerNumberThree"></p>
                 </div>
             </div>
             <div class="col-sm-1"></div>
@@ -128,31 +135,34 @@
         <div class="row" id="questionFour">
             <div class="col-sm-1"></div>
             <div class="col-sm-10" id="questions">
+                <iframe width="300" height="169" src="https://www.youtube.com/embed/wGhg-htVnJ0" frameborder="0" allowfullscreen></iframe>
                 <p>Who is the first one out of the "contest"?</p>
                 <div class="custom-controls-stacked">
                     <label class="custom-control custom-radio">
-                        <input id="question4Answer1" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question4Answer1" name="radio-stacked4" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">George</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question4Answer2" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question4Answer2" name="radio-stacked4" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Elaine</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question4Answer3" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question4Answer3" name="radio-stacked4" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Jerry</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question4Answer4" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question4Answer4" name="radio-stacked4" value="kozmo" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Kramer</span>
                     </label>
+                    <p id="answerNumberFour"></p>
+
                 </div>
             </div>
             <div class="col-sm-1"></div>
@@ -161,31 +171,34 @@
         <div class="row" id="questionFive">
             <div class="col-sm-1"></div>
             <div class="col-sm-10" id="questions">
-                <p>What do Kramer and George's dad desing and create together?</p>
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/bR3S690EF2U" frameborder="0" allowfullscreen></iframe>
+                <p>Which of the following is not a part of Festivus?</p>
                 <div class="custom-controls-stacked">
                     <label class="custom-control custom-radio">
-                        <input id="question5Answer1" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question5Answer1" name="radio-stacked5" value="manzier" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Manzier</span>
+                        <span class="custom-control-description">Decorating a christmas tree</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question5Answer2" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question5Answer2" name="radio-stacked5" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Stopping short</span>
+                        <span class="custom-control-description">Airing of Grievances</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question5Answer3" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question5Answer3" name="radio-stacked5" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Pantsless pool hall</span>
+                        <span class="custom-control-description">Feats of Strength</span>
                     </label>
                     <br>
                     <label class="custom-control custom-radio">
-                        <input id="question5Answer4" name="radio-stacked" type="radio" class="custom-control-input">
+                        <input id="question5Answer4" name="radio-stacked5" type="radio" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">The bro</span>
+                        <span class="custom-control-description">Festivus Dinner</span>
                     </label>
+                    <p id="answerNumberFive"></p>
+
                 </div>
             </div>
             <div class="col-sm-1"></div>
@@ -204,6 +217,7 @@
         <br>
     </div>
     <audio id="theme" src="assets/seinfeldTheme.mp3" preload="auto"></audio>
+           
     <footer class="footer">
       <div class="container">
         <p class="text-muted"></p>
