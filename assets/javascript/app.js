@@ -82,7 +82,7 @@ $(document).ready(function() {
 
         $("#theme").get(0).pause();
         console.log("stop music")
-        clearInterval(intervalId);
+        clearInterval(interval);
 
     });
 
